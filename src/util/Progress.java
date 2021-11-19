@@ -16,8 +16,9 @@ public class Progress implements IProgress {
         long add = rounded - n;
         n = rounded;
         //System.out.println("add "+add);
-        while (add-- > 0) {
+        while (add-- > 0) { // это как бы имитация процесса записи, можно сделать вывод точек, типа как идёт запись-прогресс
+            System.out.print(".");
         }
-        System.out.print(s);
+        System.out.print(" " +s);
     }
 }
